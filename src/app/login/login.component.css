@@ -1,0 +1,58 @@
+h1{
+    text-align: center;
+}
+
+.loginbox{
+    width: 350px;
+    height: 350px;
+    color:black;
+    top:50%;
+    left:75%;
+    position: absolute;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    border-radius: 24px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.loginbox input{
+    width: 200px;
+    margin-bottom: 20px;
+}
+.loginbox input[type="email"],input[type="password"]{
+    border: none;
+    border-bottom: 1px solid black;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    
+}
+.loginbox button[type="submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    background-color: #2990e9;
+    color:black;
+    font-size:18px;
+    margin-left: 110px;
+    border-radius: 20px;
+}
+
+.loginbox button[type="button"]{
+    height:20px;
+    width: 20px;
+    text-align: center;
+    font-weight: bolder;
+    float:right;
+    margin-top: 10px;
+    margin-left: 50px;
+    cursor: pointer;
+    transform: translate(0%, -50%);
+}
+.user{
+    padding-left: 15px;
+}
+svg{
+    max-height:100vh;
+
+}
