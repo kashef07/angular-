@@ -1,3 +1,4 @@
+import { NgPlural } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'fahi';
+  title = 'dashboard';
 }

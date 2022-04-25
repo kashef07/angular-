@@ -1,0 +1,187 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://cdn.syncfusion.com/ej2/ej2-base/styles/material.css" rel="stylesheet">
+<link href="https://cdn.syncfusion.com/ej2/ej2-buttons/styles/material.css" rel="stylesheet">
+<link href="https://cdn.syncfusion.com/ej2/ej2-popups/styles/material.css" rel="stylesheet">
+<link href="https://cdn.syncfusion.com/ej2/ej2-calendars/styles/material.css" rel="stylesheet">
+<mat-sidenav-container>
+  <mat-sidenav #sidenav mode="side" [opened]="sideBarOpen">
+    <mat-nav-list>
+      <mat-list-item>
+        <button class="listitem">
+          <mat-icon mat-list-icon class="">home</mat-icon>
+          <span>HOME </span>
+        </button>
+      </mat-list-item>
+      <mat-list-item>
+        <button class="listitem">
+          <mat-icon mat-list-icon class="">notifications</mat-icon>
+          <span>NOTIFICATION</span>
+        </button>
+      </mat-list-item>
+      <mat-list-item>
+        <button class="listitem">
+          <mat-icon mat-list-icon class="">near_me</mat-icon>
+          <span>EMAIL</span>
+        </button>
+      </mat-list-item>
+
+      <mat-list-item>
+        <button class="listitem">
+          <mat-icon mat-list-icon class="">calendar_month</mat-icon>
+          <span>DASHBOARD</span>
+        </button>
+      </mat-list-item>
+      <div class="listgap">
+
+      </div>
+      <mat-list-item>
+        <button class="listitem">
+          <mat-icon mat-list-icon class="">account_circle</mat-icon>
+          <span>USER</span>
+        </button>
+      </mat-list-item>
+      <mat-list-item>
+        <button class="listitem">
+          <mat-icon mat-list-icon class="">settings</mat-icon>
+          <span>SETTINGS</span>
+        </button>
+      </mat-list-item>
+      <mat-list-item routerLink="/login" routerLinkActive="list-item-active">
+
+        <button class="listitem">
+          <mat-icon>logout</mat-icon>
+          <span>LOGOUT</span>
+        </button>
+
+      </mat-list-item>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <button mat-icon-button id="menu" (click)="togglersidebar()">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <div class="dashboard">
+      <div class="box">
+        <div>
+          <h3 style="text-align: center;"> WELCOME USER!</h3>
+          <p>Check the calendar for today's schedule </p>
+        </div>
+        <img src="../../assets/user1.png" class="img" alt="">
+      </div>
+      <div class="box4">
+        <div class="calenderblock">
+          
+          <ejs-calendar class="calender" id=calendar [value]='value' [min]='minDate' [max]='maxDate'> </ejs-calendar>
+        
+          <div class="weather">
+            <p>
+              <mat-icon>chevron_left</mat-icon> April 4 2021 <mat-icon>chevron_right</mat-icon>
+            </p>
+            <button>
+              <mat-icon>wb_sunny</mat-icon>9am 10.30am
+            </button>
+            <button>
+              <mat-icon>wb_cloudy</mat-icon>10.30am 12pm
+            </button>
+            <button>
+              <mat-icon>wb_cloudy</mat-icon>12pm 1.30pm
+            </button>
+            <button>
+              <mat-icon>wb_sunny</mat-icon>1.30pm 3pm
+            </button>
+          </div>
+          <h3 style="font-size:25px;font-weight:100;opacity: 0.8;">Schedule </h3>
+          <div class="Schedule">
+            <div class="Schedulecontent1">
+              <div>
+                <p>Customer ID : </p>
+                <p style="color: #ff4e00;" >120071601021</p>
+              </div>
+              <div>
+                <p>Client : </p>
+                <p style="color: #ff4e00;" >Karthick</p>
+              </div>
+              <div>
+                <p>Address : </p>
+                <p>
+                  29/8, Mirza Ali Street,<br>
+                  Royapettah,<br>
+                  Chennai - 600 015.<br></p>
+              </div>
+            </div>
+
+            <div class="Schedulecontent2">
+              <button class="repainting-btn"> Repainting <img src="../../assets/paintbrush.jpg" alt=""
+                  srcset=""></button>
+              <button class="sub-btn">
+                <mat-icon> call </mat-icon>Call
+              </button>
+              <button class="sub-btn">
+                <mat-icon>location_on</mat-icon>Map
+              </button>
+            </div>
+            <button class="proceed">Proceed</button>
+          </div>
+        </div>
+
+      </div>
+      <div class="box2">
+        <img [src]="img2" class="img2" alt="">
+
+        <div class="box2-flex2">
+          <div class="total-earning">
+            <h3>
+              TOTAL POINT EARNED
+            </h3>
+            <h2>
+              <sup>
+                <mat-icon class="total-earning-arrow">play_arrow</mat-icon>+3150
+              </sup>
+            </h2>
+          </div>
+
+          <div class="medal-list">
+            <button class="medal-btn active"><img src="../../assets/medal.png" alt="">
+              <div>
+                <p class="medal-level">level 1</p>
+                <p class="medal-note">Unlocked On Dec 2022</p>
+              </div>
+              <mat-icon style="align-self: center;font-size: 15px;margin-left: 15%;">keyboard_arrow_right</mat-icon>
+            </button>
+            <button class="medal-btn"><img src="../../assets/medal2.jpg" alt="">
+              <div>
+                <p class="medal-level">level 2</p>
+                <p class="medal-note">Unlocked On Dec 2022</p>
+              </div>
+              <mat-icon style="align-self: center;font-size: 15px;margin-left: 15%;">keyboard_arrow_right</mat-icon>
+            </button>
+            <button class="medal-btn"><img src="../../assets/startrofy.jpg" alt="">
+              <div>
+                <p class="medal-level">level 3</p>
+                <p class="medal-note">Unlocked On Dec 2022</p>
+              </div>
+              <mat-icon style="align-self: center;font-size: 15px;margin-left: 15%;">keyboard_arrow_right</mat-icon>
+            </button>
+            <button class="medal-btn"><img src="../../assets/trofy.jpg" alt="">
+              <div>
+                <p class="medal-level"> level 4 </p>
+                <p class="medal-note">Unlocked On Dec 2022</p>
+              </div>
+              <mat-icon style="align-self: center;font-size: 15px;margin-left: 15%;">keyboard_arrow_right</mat-icon>
+            </button>
+            <div style="width:15% ; height: 5px; background-color: slategray;justify-self: center; margin-left: 45%;
+             border-radius: 5px;
+             "></div>
+
+          </div>
+
+        </div>
+      </div>
+      <div class="box3">
+
+        <app-my-line-chart></app-my-line-chart>
+
+      </div>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

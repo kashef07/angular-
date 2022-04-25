@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "fahi": {
+    "dashboard": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -68,10 +68,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "fahi:build:production"
+              "browserTarget": "dashboard:build:production"
             },
             "development": {
-              "browserTarget": "fahi:build:development"
+              "browserTarget": "dashboard:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -102,5 +102,5 @@
       }
     }
   },
-  "defaultProject": "fahi"
+  "defaultProject": "dashboard"
 }

@@ -1,20 +1,25 @@
-
+<div class="login">
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 437.29 463.65"><defs><style>.cls-1{fill:none;}.cls-2{clip-path:url(#clip-path);}.cls-3{fill:url(#Orange_Yellow);}.cls-4{opacity:0.12;fill:url(#Orange_Yellow-2);}.cls-5{opacity:0.08;fill:url(#linear-gradient);}</style><clipPath id="clip-path" transform="translate(0 0)"><rect class="cls-1" width="700" height="510"/></clipPath><linearGradient id="Orange_Yellow" x1="573.55" y1="-45.03" x2="268.45" y2="319.41" gradientTransform="matrix(-1, 0, 0, 1, 554.05, 0)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fff23b"/><stop offset="0.04" stop-color="#fee62e"/><stop offset="0.12" stop-color="#fdd41b"/><stop offset="0.2" stop-color="#fcc910"/><stop offset="0.28" stop-color="#fcc60c"/><stop offset="0.67" stop-color="#f28f3f"/><stop offset="0.89" stop-color="#ec683c"/><stop offset="1" stop-color="#e83e3a"/></linearGradient><linearGradient id="Orange_Yellow-2" x1="565.52" y1="-31.05" x2="260.42" y2="333.39" xlink:href="#Orange_Yellow"/><linearGradient id="linear-gradient" x1="542.72" y1="76.1" x2="353.12" y2="302.59" gradientTransform="matrix(-1, 0, 0, 1, 554.05, 0)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fff"/><stop offset="0.34" stop-color="#fbcd97"/><stop offset="0.76" stop-color="#f6931d"/></linearGradient></defs><title>1Asset 21</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><g class="cls-2"><path class="cls-3" d="M0,0V438.37C54.92,467.49,124.38,454.84,168.64,406c13.72-15.16,25.44-33.55,41.93-44.1,36.17-23.15,87.43-3.79,116.91-37.82,25.48-29.4,18.7-81.2,37.72-116.86,8.25-15.48,19.35-28.77,31.47-40.09C440.86,125.87,445.33,32.47,401.12,0Z" transform="translate(0 0)"/><path class="cls-4" d="M10.21,12.16,0,447.14c54.92,29.12,134.58,19.86,178.85-29,13.72-15.16,25.43-33.55,41.93-44.1,36.16-23.15,87.42-3.79,116.91-37.82,25.48-29.4,18.69-81.2,37.71-116.86,8.25-15.48,19.35-28.78,31.47-40.1C451.06,138,445.33,32.47,401.12,0Z" transform="translate(0 0)"/><path class="cls-5" d="M0,85.58V407.7a49.25,49.25,0,0,0,21.46,8.73c24,3.94,49.09-3.86,69.07-21.46,29.34-25.87,45.75-69.53,70.58-102.33,19-25.07,43-43.7,69.11-53.55,17-6.42,35-9.2,51.25-18.3,23.16-12.94,42.26-40.35,45.36-72.6S314.12,80.81,289.6,73c-20.63-6.56-42,5.83-63.26,4.88-18-.79-34.64-11.1-49.56-23.37-13.42-11-22.22-23.87-39.66-23.3-12.94.42-25.44,7.48-35.51,17.94C89.28,62,79.63,80.27,64.66,87,44.28,96.18,25,76.91,5.27,83.09A21.88,21.88,0,0,0,0,85.58Z" transform="translate(0 0)"/></g></g></g></svg>
+<div class="switch">
+<button routerLink="/login" class="active" >Login</button><button >Sign up</button>
+</div>
 <div class="loginbox">
-    <h1> LOGIN PAGE </h1>
+ 
     <form>
       <div class="mb-3">
-        <p class="user"></p>
-        <input type="email" class="form-control" name="email"[(ngModel)]="email" style="margin-left:10px;" placeholder="Mobile.No/Nippon ID">
+       
+        <input type="email" class="form-control" name="email"[(ngModel)]="email" style="margin-left:10px;" placeholder="Mobile.No/Nippon ID   ">
         
       </div>
+
       <div class="mb-3">
-        <p class="user"></p>
+       
         <input type="password" class="form-control" name="password"[(ngModel)]="password" style="margin-left:10px;" placeholder="*******">
       </div>
-      <button type="submit" class="btn btn-primary" (click)="logInUser()">SUBMIT</button>
-      
+      <button class="submit" type="submit" class="btn btn-primary" (click)="logInUser()">SUBMIT</button>
+       
     </form>
     
     </div>
     
+  </div>   

@@ -1,0 +1,63 @@
+.canvas{
+
+    width:200px ;
+    height:100%;
+}
+.line-chart{
+    position: relative;
+    display: flex;
+    -ms-flex-item-align:center ;
+    align-self: center;
+    justify-self: center;
+    padding: 0px 2%;
+}
+.line-chart>h4{
+    color: #8b8080;
+    font-size: 12px;
+    align-self: center;
+    padding-top: 20px;
+    margin-right: 10%;
+}
+.line-chart>h4>span{
+    font-size: 10px;
+}
+.play_arrow{
+    transform: rotate(270deg);
+    font-size: 20px;
+    color: #8b8080;
+}
+@media only screen and (max-width: 1350px){
+    canvas{
+        width:180px ;
+        align-self: center;
+    } 
+}
+@media only screen and (max-width: 1124px)and (min-width: 768px){
+    .canvas{
+        align-self: center;
+        width:170px ;
+        height:100%;
+    }
+}
+@media only screen and (max-width: 1024px){
+.canvas{
+    width:150px ;
+}
+.line-chart>h4{
+    font-size: 9px;
+}
+.line-chart>h4>span{
+    font-size: 9px;
+}
+.play_arrow{
+    font-size:15px ;
+}
+}
+@media only screen and (max-width: 790px){
+    .canvas{
+        width:70% ;
+    }
+    .line-chart{
+        padding-top:10px;
+    }
+}
