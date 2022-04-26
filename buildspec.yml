@@ -14,9 +14,7 @@ phases:
       - npm install -f
       - npm install -g @angular/cli
       - rm package-lock.json
-    pre_build:
-      commands:
-        - npm install
+      - npm install
   build:
     commands:
       - echo Build started
