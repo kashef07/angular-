@@ -13,10 +13,14 @@ phases:
       - echo Installing source NPM dependencies...
       - npm i -f
       - npm install -g @angular/cli
+      - rm package-lock.json
+    pre_build:
+      commands:
+        - npm install
   build:
     commands:
       - echo Build started
-      - ng build
+      - ng build --prod
 artifacts:
   files:
     - "**/*"
